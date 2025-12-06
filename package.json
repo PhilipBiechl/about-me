@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "shx touch build/.nojekyll",
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run build",

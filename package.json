@@ -10,7 +10,7 @@
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d out"
+    "deploy": "npm run build && shx touch build/.nojekyll && gh-pages -d build"
   },
   "dependencies": {
     "next": "16.0.7",

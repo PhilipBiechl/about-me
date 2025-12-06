@@ -4,7 +4,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 
 export default function Home() {
-  const [dark, setDark] = useState(false);
+  const [dark, setDark] = useState(true);
   return (
     <div className={`font-sans min-h-screen ${dark ? "bg-gray-900 text-gray-100" : "text-gray-800 bg-gray-50"}`}>
     {/* Navbar */}

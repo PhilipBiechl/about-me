@@ -29,7 +29,7 @@ export default function Home() {
 
     {/* Hero */}
     <section className={`flex justify-center items-center {"h-[80vh]"} text-center bg-gradient-to-r from-${dark ? "indigo-400 to-gray-800" : "indigo-100 to-gray-50"} px-4`}>
-    <div style={{ padding: '0 50px' }}>
+    <div style={{ padding: '50px 10px', margin: '25px' }}>
     <h1 className="text-4xl font-bold mb-2">
     Hello, I’m <span className="text-blue-600">Philip Biechl</span>
     </h1>
@@ -45,7 +45,7 @@ export default function Home() {
     </p>
     
     {/*<p className="text-lg">B.Sc. Student Electronics and Information Technology | A Vision forming the Engineering of tomorrow</p>*/}
-    <a href="#projects" className="inline-block mt-4 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">View My Work</a>
+    <a href="#whatido" className="inline-block mt-4 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">View My Work</a>
     </div>
     </section>
 

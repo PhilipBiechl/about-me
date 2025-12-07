@@ -29,7 +29,7 @@ export default function Home() {
 
     {/* Hero */}
     <section className={`flex justify-center items-center {"h-[80vh]"} text-center bg-gradient-to-r from-${dark ? "indigo-400 to-gray-800" : "indigo-100 to-gray-50"} px-4`}>
-    <div>
+    <div style={{ padding: '0 50px' }}>
     <h1 className="text-4xl font-bold mb-2">
     Hello, I’m <span className="text-blue-600">Philip Biechl</span>
     </h1>
@@ -71,7 +71,7 @@ export default function Home() {
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
     {[
     { title: "My work as a technical student", desc: "While completing my Bachelor's degree I pursue getting insights and working in the industry to stay at the pulse of time and refine my talent to optimise my knowledge and skill." },
-    { title: "Personal projects", desc: "You're welcome to take a look at my <a href='https://github.com/PhilipBiechl'>Github profile<a> to get some insights. Be it uninversity projects, programms for personal use or conjoint projects with my connections, I always immerse myself to reach perfection in my work." },
+    { title: "Personal projects", desc: "You're welcome to take a look at my Github profile to get some insights. Be it uninversity projects, programms for personal use or conjoint projects with my connections, I always immerse myself to reach perfection in my work." },
     { title: "Skills & interests", desc: "Combining industrial knowledge with interpersonal skills, I love to immerse myself in big visions and take the lead on cutting-edge projects." }
     ].map((p, i) => (
     <div key={i} className={`${dark ? "bg-gray-800" : "bg-white"} p-6 rounded-xl shadow-md hover:-translate-y-1 transition-transform`}>

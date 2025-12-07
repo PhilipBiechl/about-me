@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import React, { useState } from "react";
+import TextType from '../design/text_type/text_type';
 
 export default function Home() {
   const [dark, setDark] = useState(true);
@@ -27,12 +28,21 @@ export default function Home() {
 
 
     {/* Hero */}
-    <section className="flex justify-center items-center h-[80vh] text-center bg-gradient-to-r from-indigo-100 to-gray-50 px-4">
+    <section className={`flex justify-center items-center {"h-[80vh]"} text-center bg-gradient-to-r from-${dark ? "indigo-400 to-gray-800" : "indigo-100 to-gray-50"} px-4`}>
     <div>
     <h1 className="text-4xl font-bold mb-2">
     Hello, I’m <span className="text-blue-600">Philip Biechl</span>
     </h1>
-    <p className="text-lg">B.Sc. Student Electronics and Information Technology | A Vision forming the Engineering of tomorrow</p>
+
+    <TextType 
+      text={["A Vision forming the Engineering of tomorrow", "B.Sc. Student Electronics and Information Technology"]}
+      typingSpeed={75}
+      pauseDuration={1500}
+      showCursor={true}
+      cursorCharacter="|"
+    />
+
+    {/*<p className="text-lg">B.Sc. Student Electronics and Information Technology | A Vision forming the Engineering of tomorrow</p>*/}
     <a href="#projects" className="inline-block mt-4 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">View My Work</a>
     </div>
     </section>
@@ -59,7 +69,7 @@ export default function Home() {
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
     {[
     { title: "My work as a technical student", desc: "While completing my Bachelor's degree I pursue getting insights and working in the industry to stay at the pulse of time and refine my talent to optimise my knowledge and skill." },
-    { title: "Personal projects", desc: "You're welcome to take a look at my Github profile for some , https://'github.com/PhilipBiechl'. Be it uninversity projects, programms for personal use or conjoint projects with my connections, I always immerse myself to reach perfection in my work." },
+    { title: "Personal projects", desc: "You're welcome to take a look at my <a href='https://github.com/PhilipBiechl'>Github profile<a> to get some insights. Be it uninversity projects, programms for personal use or conjoint projects with my connections, I always immerse myself to reach perfection in my work." },
     { title: "Skills & interests", desc: "Combining industrial knowledge with interpersonal skills, I love to immerse myself in big visions and take the lead on cutting-edge projects." }
     ].map((p, i) => (
     <div key={i} className={`${dark ? "bg-gray-800" : "bg-white"} p-6 rounded-xl shadow-md hover:-translate-y-1 transition-transform`}>

@@ -34,14 +34,16 @@ export default function Home() {
     Hello, I’m <span className="text-blue-600">Philip Biechl</span>
     </h1>
 
-    <TextType 
-      text={["A Vision forming the Engineering of tomorrow", "B.Sc. Student Electronics and Information Technology"]}
-      typingSpeed={75}
-      pauseDuration={1500}
-      showCursor={true}
-      cursorCharacter="|"
-    />
-
+    <p className="text-lg">
+      <TextType 
+        text={["A Vision forming the Engineering of tomorrow", "B.Sc. Student Electronics and Information Technology"]}
+        typingSpeed={75}
+        pauseDuration={3000}
+        showCursor={true}
+        cursorCharacter="|"
+      />
+    </p>
+    
     {/*<p className="text-lg">B.Sc. Student Electronics and Information Technology | A Vision forming the Engineering of tomorrow</p>*/}
     <a href="#projects" className="inline-block mt-4 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">View My Work</a>
     </div>

@@ -7,7 +7,8 @@ import PixelBlast from '../design/pixels/pixels';
 export default function Home() {
   const [dark, setDark] = useState(true);
   return (
-    <div style={{ width: '100%', height: '600px', position: 'relative' }}>
+    <>
+      <div style={{ width: '100%', height: '600px', position: 'relative' }}>
       <PixelBlast
         variant="circle"
         pixelSize={6}
@@ -27,8 +28,9 @@ export default function Home() {
         edgeFade={0.25}
         transparent
       />
+      <div/>
 
-      {/*<div className={`font-sans min-h-screen ${dark ? "bg-gray-900 text-gray-100" : "text-gray-800 bg-gray-50"}`}>*/}
+      <div className={`font-sans min-h-screen ${dark ? "bg-gray-900 text-gray-100" : "text-gray-800 bg-gray-50"}`}>
       {/* Navbar */}
       <header className={`flex justify-between items-center px-10 py-6 ${dark ? "bg-gray-800" : "bg-white"} shadow-md sticky top-0 z-10`}>
       <div className="font-bold text-lg">Philip Biechl</div>
@@ -118,7 +120,8 @@ export default function Home() {
       <footer className={`${dark ? "bg-gray-800" : "bg-white"} text-center py-4 ${dark ? "text-gray-400" : "text-gray-500"} text-sm`}>
       © 2025 Philip Biechl. All rights reserved.
       </footer>
-      {/*</div>*/}
+      </div>
     </div>
+    </>
   );
 }

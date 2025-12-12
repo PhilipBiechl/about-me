@@ -7,15 +7,8 @@ import PixelBlast from '../design/pixels/pixels';
 export default function Home() {
   const [dark, setDark] = useState(true);
   return (
-    <div style={{ position: "relative", overflowX: "hidden" }}>
-      <div style={{
-          position: "fixed",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          zIndex: -1,
-        }}>
+    <>
+      <div className='w-full h-screen relative flex justify-center items-center'>
       <PixelBlast
         variant="circle"
         pixelSize={6}
@@ -32,9 +25,9 @@ export default function Home() {
         speed={0.6}
         edgeFade={0.25}
       />
-      
+      <div/>
 
-      <div style={{ position: "relative", zIndex: 1, minHeight: "100%" }}>
+      <div className={`font-sans absolute flex flex-col`}>
       {/* Navbar */}
       <header className={`flex justify-between items-center px-10 py-6 ${dark ? "bg-gray-800" : "bg-white"} shadow-md sticky top-0 z-10`}>
       <div className="font-bold text-lg">Philip Biechl</div>
@@ -125,8 +118,7 @@ export default function Home() {
       © 2025 Philip Biechl. All rights reserved.
       </footer>
       </div>
-      <div/>
     </div>
-    </div>
+    </>
   );
 }

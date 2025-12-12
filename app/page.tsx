@@ -32,7 +32,7 @@ export default function Home() {
         speed={0.6}
         edgeFade={0.25}
       />
-      <div/>
+      
 
       <div style={{ position: "relative", zIndex: 1, minHeight: "100%" }}>
       {/* Navbar */}
@@ -125,6 +125,7 @@ export default function Home() {
       © 2025 Philip Biechl. All rights reserved.
       </footer>
       </div>
+      <div/>
     </div>
     </div>
   );

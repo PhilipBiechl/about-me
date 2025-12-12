@@ -8,7 +8,14 @@ export default function Home() {
   const [dark, setDark] = useState(true);
   return (
     <>
-      <div className='w-full h-full fixed justify-center items-center'>
+      <div style={{
+          position: "fixed",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          zIndex: -1,
+        }}>
       <PixelBlast
         variant="circle"
         pixelSize={6}
@@ -27,7 +34,7 @@ export default function Home() {
       />
       <div/>
 
-      <div className={`font-sans min-h-screen`}>
+      <div style={{ position: "relative", zIndex: 1, padding: "40px", color: "white" }}>
       {/* Navbar */}
       <header className={`flex justify-between items-center px-10 py-6 ${dark ? "bg-gray-800" : "bg-white"} shadow-md sticky top-0 z-10`}>
       <div className="font-bold text-lg">Philip Biechl</div>

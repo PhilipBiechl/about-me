@@ -8,7 +8,7 @@ export default function Home() {
   const [dark, setDark] = useState(true);
   return (
     <>
-      <div style={{ width: '100%', height: '600px', position: 'relative' }}>
+      <div className='w-full h-screen relative flex justify-center items-center'>
       <PixelBlast
         variant="circle"
         pixelSize={6}
@@ -30,7 +30,7 @@ export default function Home() {
       />
       <div/>
 
-      <div className={`font-sans min-h-screen ${dark ? "bg-gray-900 text-gray-100" : "text-gray-800 bg-gray-50"}`}>
+      <div className={`font-sans absolute flex flex-col ${dark ? "bg-gray-900 text-gray-100" : "text-gray-800 bg-gray-50"}`}>
       {/* Navbar */}
       <header className={`flex justify-between items-center px-10 py-6 ${dark ? "bg-gray-800" : "bg-white"} shadow-md sticky top-0 z-10`}>
       <div className="font-bold text-lg">Philip Biechl</div>

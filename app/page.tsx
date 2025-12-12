@@ -7,7 +7,7 @@ import PixelBlast from '../design/pixels/pixels';
 export default function Home() {
   const [dark, setDark] = useState(true);
   return (
-    <>
+    <div style={{ position: "relative", overflowX: "hidden" }}>
       <div style={{
           top: 0,
           left: 0,
@@ -125,6 +125,6 @@ export default function Home() {
       </footer>
       </div>
     </div>
-    </>
+    </div>
   );
 }

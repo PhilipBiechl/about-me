@@ -27,7 +27,7 @@ export default function Home() {
       />
       <div/>
 
-      <div className={`font-sans relative flex flex-col`}>
+      <div className={`font-sans absolute`}>
       {/* Navbar */}
       <header className={`flex justify-between items-center px-10 py-6 ${dark ? "bg-gray-800" : "bg-white"} shadow-md sticky top-0 z-10`}>
       <div className="font-bold text-lg">Philip Biechl</div>

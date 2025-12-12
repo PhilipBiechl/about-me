@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div style={{ position: "relative", overflowX: "hidden" }}>
       <div style={{
-          position: "absolute",
+          position: "relative",
           top: 0,
           left: 0,
           width: "100%",

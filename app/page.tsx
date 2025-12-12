@@ -9,7 +9,6 @@ export default function Home() {
   return (
     <>
       <div style={{
-          position: "fixed",
           top: 0,
           left: 0,
           width: "100%",
@@ -34,7 +33,7 @@ export default function Home() {
       />
       <div/>
 
-      <div style={{ position: "relative", zIndex: 1, padding: "40px", color: "white" }}>
+      <div style={{ position: "relative", zIndex: 1 }}>
       {/* Navbar */}
       <header className={`flex justify-between items-center px-10 py-6 ${dark ? "bg-gray-800" : "bg-white"} shadow-md sticky top-0 z-10`}>
       <div className="font-bold text-lg">Philip Biechl</div>

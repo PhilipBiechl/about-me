@@ -3,12 +3,13 @@
 import { useState } from "react";
 import TextType from '../design/text_type/text_type';
 import PixelBlast from '../design/pixels/pixels';
+import GlassSurface from '../design/glass/glass'
 
 export default function Home() {
   const [dark, setDark] = useState(true);
   return (
     <>
-      <div className='w-full h-full relative flex'>
+      <div className='w-full h-full relative'>
       <PixelBlast
         variant="circle"
         pixelSize={6}
@@ -29,7 +30,19 @@ export default function Home() {
 
       <div className={`font-sans absolute`}>
       {/* Navbar */}
-      <header className={`flex justify-between items-center px-10 py-6 ${dark ? "bg-gray-800" : "bg-white"} shadow-md sticky top-0 z-10`}>
+      {/*<header className={`flex justify-between items-center px-10 py-6 ${dark ? "bg-gray-800" : "bg-white"} shadow-md sticky top-0 z-10`}>*/}
+
+      <GlassSurface
+        displace={15}
+        distortionScale={-150}
+        redOffset={5}
+        greenOffset={15}
+        blueOffset={25}
+        brightness={60}
+        opacity={0.8}
+        mixBlendMode="screen"
+      >
+      
       <div className="font-bold text-lg">Philip Biechl</div>
       <nav>
       <ul className="flex gap-6">
@@ -44,7 +57,9 @@ export default function Home() {
       <div className="w-11 h-6 bg-gray-300 peer-focus:outline-none rounded-full peer peer-checked:bg-blue-600 transition-colors"></div>
       <span className={`absolute left-1 top-1 w-4 h-4 ${dark ? "bg-gray-800" : "bg-white"} rounded-full transition-transform peer-checked:translate-x-5`}></span>
       </label>
-      </header>
+
+      </GlassSurface>
+      {/*</header>*/}
 
 
       {/* Hero */}

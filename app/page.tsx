@@ -30,7 +30,7 @@ export default function Home() {
 
       <div className={`font-sans absolute`}>
       {/* Navbar */}
-      {/*<header className={`flex justify-between items-center px-10 py-6 ${dark ? "bg-gray-800" : "bg-white"} shadow-md sticky top-0 z-10`}>*/}
+      <header className={`flex justify-between items-center px-10 py-6 ${dark ? "bg-gray-800" : "bg-white"} shadow-md sticky top-0 z-10`}>
 
       <GlassSurface
         displace={15}
@@ -59,7 +59,7 @@ export default function Home() {
       </label>
 
       </GlassSurface>
-      {/*</header>*/}
+      </header>
 
 
       {/* Hero */}

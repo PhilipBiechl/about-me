@@ -9,7 +9,7 @@ export default function Home() {
   const [dark, setDark] = useState(true);
   return (
     <>
-      <div className='w-full h-full relative'>
+      <div className='w-full h-full relative flex'>
       <PixelBlast
         variant="circle"
         pixelSize={6}

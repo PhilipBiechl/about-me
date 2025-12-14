@@ -90,10 +90,10 @@ export default function Home() {
       <div className={`${dark ? "bg-gray-800/[var(--bg-opacity)] [--bg-opacity:50%] hover:[--bg-opacity:60%]" : "bg-white"} rounded-xl p-10 shadow-md max-w-3xl mx-auto`}>
       <h2 className="text-2xl font-bold mb-4">About Me</h2>
       <p>
-      My motto is simple: to be the best today means to be old tomorrow. 
-
-      By embracing challenges, seeking out for new opportunities, and an unbreakable will to improve, I keep my finger on the pulse of technology. At work as in university, where I define myself through precision and a strong vision for the future, this is what I am dedicated to.
-
+      My motto is simple: to be the best today means to be old tomorrow. <br/>
+      <br/>
+      By embracing challenges, seeking out for new opportunities, and an unbreakable will to improve, I keep my finger on the pulse of technology. At work as in university, where I define myself through precision and a strong vision for the future, this is what I am dedicated to. <br/>
+      <br/>
       Always aim to be the best of tomorrow.
       </p>
       </div>
@@ -124,9 +124,9 @@ export default function Home() {
       <h2 className="text-2xl font-bold mb-4">Contact</h2>
       <p>Feel free to reach out if you'd like to collaborate</p>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-        <a href="mailto:philip.biechl@gmail.com" className="inline-block mt-4 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Email Me</a>
-        <a href="mailto:philip.biechl@gmail.com" className="inline-block mt-4 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Email Me</a>
-        <a href="mailto:philip.biechl@gmail.com" className="inline-block mt-4 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Email Me</a>
+        <a href="https://www.linkedin.com/in/philip-biechl/" className="inline-block mt-4 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">LinkedIn</a>
+        <a href="mailto:philip.biechl@gmail.com" className="inline-block mt-4 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Email</a>
+        <a href="https://www.instagram.com/philip.biechl/" className="inline-block mt-4 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Instagram</a>
       </div>
       </div>
       </section>

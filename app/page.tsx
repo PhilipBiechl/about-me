@@ -30,9 +30,9 @@ export default function Home() {
 
       <div className={`font-sans absolute`}>
       {/* Navbar */}
-      <header className={`flex justify-between items-center px-10 py-6 ${dark ? "bg-gray-800" : "bg-white"} shadow-md sticky top-0 z-10`}>
+      <header className={`flex justify-between items-center px-10 py-6 ${dark ? "bg-gray-800/[var(--bg-opacity)] [--bg-opacity:50%]" : "bg-white"} shadow-md sticky top-0 z-10`}>
 
-      <GlassSurface
+      {/*<GlassSurface
         displace={15}
         distortionScale={-150}
         redOffset={5}
@@ -41,7 +41,7 @@ export default function Home() {
         brightness={60}
         opacity={0.8}
         mixBlendMode="screen"
-      >
+      >*/}
       
       <div className="font-bold text-lg">Philip Biechl</div>
       <nav>
@@ -58,12 +58,12 @@ export default function Home() {
       <span className={`absolute left-1 top-1 w-4 h-4 ${dark ? "bg-gray-800" : "bg-white"} rounded-full transition-transform peer-checked:translate-x-5`}></span>
       </label>
 
-      </GlassSurface>
+      {/*</GlassSurface</div>*/}
       </header>
 
 
       {/* Hero */}
-      <section className={`flex justify-center items-center {"h-[80vh]"} text-center bg-gradient-to-r from-${dark ? "indigo-400 to-gray-800" : "indigo-100 to-gray-50"} px-4`}>
+      <section className={`flex justify-center items-center {"h-[80vh]"} text-center bg-gradient-to-r ${dark ? "from-indigo-400 to-gray-800" : "from-indigo-100 to-gray-50"} px-4`}>
       <div style={{ padding: '50px 10px', margin: '25px' }}>
       <h1 className="text-4xl font-bold mb-2">
       Hello, I’m <span className="text-blue-600">Philip Biechl</span>
@@ -87,7 +87,7 @@ export default function Home() {
 
       {/* About */}
       <section id="about" className="py-16 px-10 text-center">
-      <div className={`${dark ? "bg-gray-800" : "bg-white"} rounded-xl p-10 shadow-md max-w-3xl mx-auto`}>
+      <div className={`${dark ? "bg-gray-800/[var(--bg-opacity)] [--bg-opacity:50%] hover:[--bg-opacity:60%]" : "bg-white"} rounded-xl p-10 shadow-md max-w-3xl mx-auto`}>
       <h2 className="text-2xl font-bold mb-4">About Me</h2>
       <p>
       My motto is simple: to be the best today means to be old tomorrow. 

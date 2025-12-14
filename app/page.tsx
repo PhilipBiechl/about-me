@@ -12,9 +12,9 @@ export default function Home() {
       <div className='w-full h-full relative flex'>
       <PixelBlast
         variant="circle"
-        pixelSize={6}
+        pixelSize={4}
         color="#B19EEF"
-        patternScale={3}
+        patternScale={5}
         patternDensity={1.2}
         pixelSizeJitter={0.5}
         rippleSpeed={0.4}
@@ -23,7 +23,7 @@ export default function Home() {
         liquidStrength={0.12}
         liquidRadius={1.2}
         liquidWobbleSpeed={5}
-        speed={0.6}
+        speed={0.8}
         edgeFade={0.25}
       />
       <div/>
@@ -63,7 +63,7 @@ export default function Home() {
 
 
       {/* Hero */}
-      <section className={`flex justify-center items-center {"h-[80vh]"} text-center bg-gradient-to-r ${dark ? "from-indigo-400 to-gray-800" : "from-indigo-100 to-gray-50"} px-4`}>
+      <section className={`flex justify-center items-center {"h-[80vh]"} text-center bg-gradient-to-r ${/*dark ? "from-indigo-400 to-gray-800" : "from-indigo-100 to-gray-50"*/"bg-transparent"} px-4`}>
       <div style={{ padding: '50px 10px', margin: '25px' }}>
       <h1 className="text-4xl font-bold mb-2">
       Hello, I’m <span className="text-blue-600">Philip Biechl</span>
@@ -104,32 +104,36 @@ export default function Home() {
       <section id="whatido" className="py-16 px-10 text-center">
       <h2 className="text-2xl font-bold mb-6">What I do</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-      {[
-      { title: "My work as a technical student", desc: "While completing my Bachelor's degree I pursue getting insights and working in the industry to stay at the pulse of time and refine my talent to optimise my knowledge and skill." },
-      { title: "Personal projects", desc: "You're welcome to take a look at my Github profile to get some insights. Be it uninversity projects, programms for personal use or conjoint projects with my connections, I always immerse myself to reach perfection in my work." },
-      { title: "Skills & interests", desc: "Combining industrial knowledge with interpersonal skills, I love to immerse myself in big visions and take the lead on cutting-edge projects." }
-      ].map((p, i) => (
-      <div key={i} className={`${dark ? "bg-gray-800" : "bg-white"} p-6 rounded-xl shadow-md hover:-translate-y-1 transition-transform`}>
-      <h3 className="font-semibold text-lg mb-2">{p.title}</h3>
-      <p>{p.desc}</p>
-      </div>
-      ))}
+        {[
+        { title: "My work as a technical student", desc: "While completing my Bachelor's degree I pursue getting insights and working in the industry to stay at the pulse of time and refine my talent to optimise my knowledge and skill." },
+        { title: "Personal projects", desc: "You're welcome to take a look at my Github profile to get some insights. Be it uninversity projects, programms for personal use or conjoint projects with my connections, I always immerse myself to reach perfection in my work." },
+        { title: "Skills & interests", desc: "Combining industrial knowledge with interpersonal skills, I love to immerse myself in big visions and take the lead on cutting-edge projects." }
+        ].map((p, i) => (
+        <div key={i} className={`${dark ? "bg-gray-800/[var(--bg-opacity)] [--bg-opacity:50%] hover:[--bg-opacity:60%]" : "bg-white"} p-6 rounded-xl shadow-md hover:-translate-y-1 transition-transform`}>
+        <h3 className="font-semibold text-lg mb-2">{p.title}</h3>
+        <p>{p.desc}</p>
+        </div>
+        ))}
       </div>
       </section>
 
 
       {/* Contact */}
-      <section id="contact" className="py-16 px-10 text-center">
-      <div className={`${dark ? "bg-gray-800" : "bg-white"} rounded-xl p-10 shadow-md max-w-xl mx-auto`}>
+      <section id="contact" className="py-16 px-25 text-center">
+      <div className={`${dark ? "bg-gray-800/[var(--bg-opacity)] [--bg-opacity:50%] hover:[--bg-opacity:60%]" : "bg-white"} rounded-xl p-10 shadow-md max-w-xl mx-auto`}>
       <h2 className="text-2xl font-bold mb-4">Contact</h2>
-      <p>Feel free to reach out if you'd like to collaborate or chat about engineering!</p>
-      <a href="mailto:philip.biechl@gmail.com" className="inline-block mt-4 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Email Me</a>
+      <p>Feel free to reach out if you'd like to collaborate</p>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+        <a href="mailto:philip.biechl@gmail.com" className="inline-block mt-4 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Email Me</a>
+        <a href="mailto:philip.biechl@gmail.com" className="inline-block mt-4 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Email Me</a>
+        <a href="mailto:philip.biechl@gmail.com" className="inline-block mt-4 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">Email Me</a>
+      </div>
       </div>
       </section>
 
 
       {/* Footer */}
-      <footer className={`${dark ? "bg-gray-800" : "bg-white"} text-center py-4 ${dark ? "text-gray-400" : "text-gray-500"} text-sm`}>
+      <footer className={`${dark ? "bg-gray-800/[var(--bg-opacity)] [--bg-opacity:50%]" : "bg-white"} text-center py-4 ${dark ? "text-gray-400" : "text-gray-500"} text-sm`}>
       © 2025 Philip Biechl. All rights reserved.
       </footer>
       </div>

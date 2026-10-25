@@ -71,7 +71,7 @@ export default function Home() {
 
       <p className="text-lg">
         <TextType 
-          text={["A Vision forming the Engineering of tomorrow", "B.Sc. Student Electronics and Information Technology"]}
+          text={["A Vision forming the Engineering of tomorrow", "M.Sc. Electrical Engineering & Information Technology"]}
           typingSpeed={75}
           pauseDuration={3000}
           showCursor={true}
@@ -80,7 +80,7 @@ export default function Home() {
       </p>
       
       {/*<p className="text-lg">B.Sc. Student Electronics and Information Technology | A Vision forming the Engineering of tomorrow</p>*/}
-      <a href="#whatido" className="inline-block mt-4 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">View My Work</a>
+      <a href="https://github.com/PhilipBiechl" className="inline-block mt-4 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">View My Work</a>
       </div>
       </section>
 
@@ -101,13 +101,14 @@ export default function Home() {
 
 
       {/* Projects */}
+        {/*
       <section id="whatido" className="py-16 px-10 text-center">
       <h2 className="text-2xl font-bold mb-6">What I do</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
         {[
-        { title: "My work as a technical student", desc: "While completing my Bachelor's degree I pursue getting insights and working in the industry to stay at the pulse of time and refine my talent to optimise my knowledge and skill." },
-        { title: "Personal projects", desc: "You're welcome to take a look at my Github profile to get some insights. Be it uninversity projects, programms for personal use or conjoint projects with my connections, I always immerse myself to reach perfection in my work." },
-        { title: "Skills & interests", desc: "Combining industrial knowledge with interpersonal skills, I love to immerse myself in big visions and take the lead on cutting-edge projects." }
+        { title: "", desc: "Student @ TUM" },
+        { title: "", desc: "" },
+        { title: "", desc: "" }
         ].map((p, i) => (
         <div key={i} className={`${dark ? "bg-gray-800/[var(--bg-opacity)] [--bg-opacity:50%] hover:[--bg-opacity:60%]" : "bg-white"} p-6 rounded-xl shadow-md hover:-translate-y-1 transition-transform`}>
         <h3 className="font-semibold text-lg mb-2">{p.title}</h3>
@@ -116,7 +117,7 @@ export default function Home() {
         ))}
       </div>
       </section>
-
+      */}
 
       {/* Contact */}
       <section id="contact" className="py-16 px-25 text-center">

@@ -85,9 +85,10 @@ const TextType = ({
   }, [startOnVisible]);
 
   useEffect(() => {
+    let tween: gsap.core.Tween | null = null;
     if (showCursor && cursorRef.current) {
       gsap.set(cursorRef.current, { opacity: 1 });
-      gsap.to(cursorRef.current, {
+      tween = gsap.to(cursorRef.current, {
         opacity: 0,
         duration: cursorBlinkDuration,
         repeat: -1,
@@ -95,6 +96,9 @@ const TextType = ({
         ease: 'power2.inOut'
       });
     }
+    return () => {
+      tween?.kill();
+    };
   }, [showCursor, cursorBlinkDuration]);
 
   useEffect(() => {
@@ -108,8 +112,8 @@ const TextType = ({
     const executeTypingAnimation = () => {
       if (isDeleting) {
         if (displayedText === '') {
-          setIsDeleting(false);
           if (currentTextIndex === textArray.length - 1 && !loop) {
+            setIsDeleting(false);
             return;
           }
 
@@ -117,9 +121,11 @@ const TextType = ({
             onSentenceComplete(textArray[currentTextIndex], currentTextIndex);
           }
 
-          setCurrentTextIndex(prev => (prev + 1) % textArray.length);
-          setCurrentCharIndex(0);
-          timeout = setTimeout(() => {}, pauseDuration);
+          timeout = setTimeout(() => {
+            setIsDeleting(false);
+            setCurrentTextIndex(prev => (prev + 1) % textArray.length);
+            setCurrentCharIndex(0);
+          }, pauseDuration);
         } else {
           timeout = setTimeout(() => {
             setDisplayedText(prev => prev.slice(0, -1));

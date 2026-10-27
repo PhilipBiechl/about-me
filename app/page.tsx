@@ -9,7 +9,8 @@ export default function Home() {
   const [dark, setDark] = useState(true);
   return (
     <>
-      <div className='w-full h-full relative flex'>
+      <div className='relative w-full min-h-screen overflow-x-hidden'>
+      <div className="fixed inset-0 -z-10 w-full h-full">
       <PixelBlast
         variant="circle"
         pixelSize={4}
@@ -26,11 +27,11 @@ export default function Home() {
         speed={0.8}
         edgeFade={0.25}
       />
-      <div/>
+      </div>
 
-      <div className={`font-sans absolute`}>
+      <div className="relative z-10 w-full min-h-screen flex flex-col font-sans">
       {/* Navbar */}
-      <header className={`flex justify-between items-center px-10 py-6 ${dark ? "bg-gray-800/[var(--bg-opacity)] [--bg-opacity:50%]" : "bg-white"} shadow-md sticky top-0 z-10`}>
+      <header className={`flex justify-between items-center px-10 py-6 w-full ${dark ? "bg-gray-800/[var(--bg-opacity)] [--bg-opacity:50%]" : "bg-white"} shadow-md sticky top-0 z-10`}>
 
       {/*<GlassSurface
         displace={15}

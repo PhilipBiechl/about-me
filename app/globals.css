@@ -25,6 +25,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-w-full {
-  width: 100vw;
+html,
+body {
+  width: 100%;
+  min-height: 100%;
 }

@@ -64,7 +64,7 @@ export default function Home() {
 
 
       {/* Hero */}
-      <section className={`flex justify-center items-center {"h-[80vh]"} text-center bg-gradient-to-r ${/*dark ? "from-indigo-400 to-gray-800" : "from-indigo-100 to-gray-50"*/"bg-transparent"} px-4 sticky`}>
+      <section className={`w-full flex justify-center items-center {"h-[80vh]"} text-center bg-gradient-to-r ${/*dark ? "from-indigo-400 to-gray-800" : "from-indigo-100 to-gray-50"*/"bg-transparent"} px-4`}>
       <div style={{ padding: '50px 10px', margin: '25px' }}>
       <h1 className="text-4xl font-bold mb-2">
       Hello, I’m <span className="text-blue-600">Philip Biechl</span>
@@ -87,7 +87,7 @@ export default function Home() {
 
 
       {/* About */}
-      <section id="about" className="py-16 px-10 text-center">
+      <section id="about" className="w-full py-16 px-10 text-center">
       <div className={`${dark ? "bg-gray-800/[var(--bg-opacity)] [--bg-opacity:50%] hover:[--bg-opacity:60%]" : "bg-white"} rounded-xl p-10 shadow-md max-w-3xl mx-auto`}>
       <h2 className="text-2xl font-bold mb-4">About Me</h2>
       <p>
@@ -121,7 +121,7 @@ export default function Home() {
       
 
       {/* Contact */}
-      <section id="contact" className="py-16 px-25 text-center">
+      <section id="contact" className="w-full py-16 px-25 text-center">
       <div className={`${dark ? "bg-gray-800/[var(--bg-opacity)] [--bg-opacity:50%] hover:[--bg-opacity:60%]" : "bg-white"} rounded-xl p-10 shadow-md max-w-xl mx-auto`}>
       <h2 className="text-2xl font-bold mb-4">Contact</h2>
       <p>Feel free to reach out if you'd like to collaborate</p>
@@ -135,7 +135,7 @@ export default function Home() {
 
 
       {/* Footer */}
-      <footer className={`${dark ? "bg-gray-800/[var(--bg-opacity)] [--bg-opacity:50%]" : "bg-white"} text-center py-4 ${dark ? "text-gray-400" : "text-gray-500"} text-sm`}>
+      <footer className={`${dark ? "bg-gray-800/[var(--bg-opacity)] [--bg-opacity:50%]" : "bg-white"} text-center py-4 ${dark ? "text-gray-400" : "text-gray-500"} text-sm w-full `}>
       © 2026 Philip Biechl. All rights reserved.
       </footer>
       </div>

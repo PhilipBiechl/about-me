@@ -102,11 +102,11 @@ export default function Home() {
 
 
       {/* Projects */}
-        {/*
+        
       <section id="whatido" className="py-16 px-10 text-center">
       <h2 className="text-2xl font-bold mb-6">What I do</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-        {[
+        {/*{[
         { title: "", desc: "Student @ TUM" },
         { title: "", desc: "tbc" }
         ].map((p, i) => (
@@ -114,10 +114,10 @@ export default function Home() {
         <h3 className="font-semibold text-lg mb-2">{p.title}</h3>
         <p>{p.desc}</p>
         </div>
-        ))}
+        ))}*/}
       </div>
       </section>
-      */}
+      
 
       {/* Contact */}
       <section id="contact" className="py-16 px-25 text-center">

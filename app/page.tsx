@@ -135,7 +135,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className={`${dark ? "bg-gray-800/[var(--bg-opacity)] [--bg-opacity:50%]" : "bg-white"} text-center py-4 ${dark ? "text-gray-400" : "text-gray-500"} text-sm`}>
-      © 2025 Philip Biechl. All rights reserved.
+      © 2026 Philip Biechl. All rights reserved.
       </footer>
       </div>
     </div>

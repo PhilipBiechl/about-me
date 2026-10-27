@@ -45,18 +45,19 @@ export default function Home() {
       
       <div className="font-bold text-lg">Philip Biechl</div>
       <nav>
-      <ul className="flex gap-6">
+      {/*<ul className="flex gap-6">
       <li><a href="#about" className="hover:text-blue-600">About</a></li>
       <li><a href="#whatido" className="hover:text-blue-600">What I do</a></li>
       <li><a href="#contact" className="hover:text-blue-600">Contact</a></li>
-      </ul>
+      </ul>*/}
+      <div>Located in Munich, Bavaria</div>
       </nav>
-      {/* Dark mode toggle */}
+      {/* Dark mode toggle /}
       <label className="relative inline-flex items-center cursor-pointer ml-4">
       <input type="checkbox" className="sr-only peer" checked={dark} onChange={() => setDark(!dark)} />
       <div className="w-11 h-6 bg-gray-300 peer-focus:outline-none rounded-full peer peer-checked:bg-blue-600 transition-colors"></div>
       <span className={`absolute left-1 top-1 w-4 h-4 ${dark ? "bg-gray-800" : "bg-white"} rounded-full transition-transform peer-checked:translate-x-5`}></span>
-      </label>
+      </label>*/}
 
       {/*</GlassSurface</div>*/}
       </header>
@@ -107,8 +108,7 @@ export default function Home() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
         {[
         { title: "", desc: "Student @ TUM" },
-        { title: "", desc: "" },
-        { title: "", desc: "" }
+        { title: "", desc: "tbc" }
         ].map((p, i) => (
         <div key={i} className={`${dark ? "bg-gray-800/[var(--bg-opacity)] [--bg-opacity:50%] hover:[--bg-opacity:60%]" : "bg-white"} p-6 rounded-xl shadow-md hover:-translate-y-1 transition-transform`}>
         <h3 className="font-semibold text-lg mb-2">{p.title}</h3>

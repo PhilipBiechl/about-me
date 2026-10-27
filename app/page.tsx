@@ -64,7 +64,7 @@ export default function Home() {
 
 
       {/* Hero */}
-      <section className={`flex justify-center items-center {"h-[80vh]"} text-center bg-gradient-to-r ${/*dark ? "from-indigo-400 to-gray-800" : "from-indigo-100 to-gray-50"*/"bg-transparent"} px-4`}>
+      <section className={`flex justify-center items-center {"h-[80vh]"} text-center bg-gradient-to-r ${/*dark ? "from-indigo-400 to-gray-800" : "from-indigo-100 to-gray-50"*/"bg-transparent"} px-4 sticky`}>
       <div style={{ padding: '50px 10px', margin: '25px' }}>
       <h1 className="text-4xl font-bold mb-2">
       Hello, I’m <span className="text-blue-600">Philip Biechl</span>
